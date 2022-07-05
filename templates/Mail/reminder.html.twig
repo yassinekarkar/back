@@ -1,0 +1,17 @@
+{% extends  "Mail/base.htmltwig" %}
+
+{% block content %}
+
+    {% block contentHeader %}
+        {{ 'dear_client', data.client_name }},
+        <br/>
+        <br/>
+    {% endblock contentHeader %}
+
+
+    {% block bodyContent %}
+        {{ 'facture_reminder_message'  }}
+
+    {% endblock bodyContent%}
+
+{% endblock content%}
